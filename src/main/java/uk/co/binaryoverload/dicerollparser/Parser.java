@@ -35,12 +35,12 @@ public class Parser {
                             "(?:[><lh]\\d+)?" + // Selector and value (Optional)
                         ")+" + // One or more selectors
                     ")?" +
-                    "((?:[+\\-*\\/]\\d+)+(?!d))?" + // Capture Group 4 (Is optional), matches a list of operators (+4*3)
-                    "(?:\\[(.+)\\])?"+ // Capture Group 5 (Is optional), matches a [label] with any text inside
-                    "(?:([+\\-*\\/])|$)"); // Capture Group 6, matches the operator between dice rolls
+                    "((?:[+\\-*/]\\d+)+(?!d))?" + // Capture Group 4 (Is optional), matches a list of operators (+4*3)
+                    "(?:\\[(.+)])?"+ // Capture Group 5 (Is optional), matches a [label] with any text inside
+                    "(?:([+\\-*/])|$)"); // Capture Group 6, matches the operator between dice rolls
             //@formatter:off
 
-    private static final Pattern ADDED_VALUE_PATTERN = Pattern.compile("([+\\-*\\/])(\\d+)");
+    private static final Pattern ADDED_VALUE_PATTERN = Pattern.compile("([+\\-*/])(\\d+)");
     private static final Pattern DICE_PATTERN = Pattern.compile("^(\\d+)d(\\d+)$");
     private static final Pattern MODIFIER_PATTERN = Pattern.compile("(k|p|mi|ma|rr|ro|ra|e)(\\d+)?(?:([><lh])(\\d+))?");
 
@@ -74,7 +74,7 @@ public class Parser {
         List<DiceRoll> rolls = new ArrayList<>();
         while (rollMatcher.find()) {
 
-            String[] diceCombos = new String[0];
+            String[] diceCombos;
             if (rollMatcher.group(1) != null) {
                 diceCombos = new String[]{rollMatcher.group(1)};
             } else if (rollMatcher.group(2) != null) {
