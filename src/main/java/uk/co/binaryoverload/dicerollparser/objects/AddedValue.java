@@ -22,7 +22,7 @@ public class AddedValue {
 
     @Override
     public String toString() {
-        return "objects.AddedValue{" +
+        return "AddedValue{" +
                 "operator=" + operator +
                 ", value=" + value +
                 '}';

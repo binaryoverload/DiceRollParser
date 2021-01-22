@@ -43,12 +43,12 @@ public class DiceRoll {
 
     @Override
     public String toString() {
-        return "objects.DiceRoll{" +
-                "dice=" + dice +
-                ", label='" + label + '\'' +
-                ", modifiers=" + modifiers +
-                ", addedValue=" + addedValue +
-                ", operator=" + operator +
+        return "DiceRoll{\n" +
+                "\tdice=" + dice + "\n" +
+                "\tlabel='" + label + '\'' + "\n" +
+                "\tmodifiers=" + modifiers + "\n" +
+                "\taddedValue=" + addedValue + "\n" +
+                "\toperator=" + operator + "\n" +
                 '}';
     }
 

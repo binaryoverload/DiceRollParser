@@ -35,7 +35,7 @@ public class Modifier {
 
     @Override
     public String toString() {
-        return "objects.Modifier{" +
+        return "Modifier{" +
                 "type=" + type +
                 ", value=" + value +
                 ", selector=" + selector +

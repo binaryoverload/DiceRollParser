@@ -20,7 +20,7 @@ public class Die {
 
     @Override
     public String toString() {
-        return "objects.Die{" +
+        return "Die{" +
                 "diceCount=" + diceCount +
                 ", diceValue=" + diceValue +
                 '}';
