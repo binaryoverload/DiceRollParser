@@ -1,4 +1,4 @@
-package objects;
+package uk.co.binaryoverload.dicerollparser.objects;
 
 public class Die {
 

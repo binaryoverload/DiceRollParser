@@ -1,11 +1,12 @@
+package uk.co.binaryoverload.dicerollparser;
 
-import enums.ModifierType;
-import enums.Operator;
-import enums.Selector;
-import objects.AddedValue;
-import objects.DiceRoll;
-import objects.Die;
-import objects.Modifier;
+import uk.co.binaryoverload.dicerollparser.enums.ModifierType;
+import uk.co.binaryoverload.dicerollparser.enums.Operator;
+import uk.co.binaryoverload.dicerollparser.enums.Selector;
+import uk.co.binaryoverload.dicerollparser.objects.AddedValue;
+import uk.co.binaryoverload.dicerollparser.objects.DiceRoll;
+import uk.co.binaryoverload.dicerollparser.objects.Die;
+import uk.co.binaryoverload.dicerollparser.objects.Modifier;
 
 import java.util.ArrayList;
 import java.util.Arrays;

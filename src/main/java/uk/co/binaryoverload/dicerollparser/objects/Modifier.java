@@ -1,7 +1,7 @@
-package objects;
+package uk.co.binaryoverload.dicerollparser.objects;
 
-import enums.ModifierType;
-import enums.Selector;
+import uk.co.binaryoverload.dicerollparser.enums.ModifierType;
+import uk.co.binaryoverload.dicerollparser.enums.Selector;
 
 public class Modifier {
 

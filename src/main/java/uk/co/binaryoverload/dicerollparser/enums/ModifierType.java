@@ -1,4 +1,4 @@
-package enums;
+package uk.co.binaryoverload.dicerollparser.enums;
 
 import java.util.HashMap;
 import java.util.Map;

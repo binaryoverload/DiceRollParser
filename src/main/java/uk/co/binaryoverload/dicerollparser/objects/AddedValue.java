@@ -1,6 +1,6 @@
-package objects;
+package uk.co.binaryoverload.dicerollparser.objects;
 
-import enums.Operator;
+import uk.co.binaryoverload.dicerollparser.enums.Operator;
 
 public class AddedValue {
 
