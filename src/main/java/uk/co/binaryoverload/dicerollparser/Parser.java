@@ -36,7 +36,7 @@ public class Parser {
                         ")+" + // One or more selectors
                     ")?" +
                     "((?:[+\\-*/]\\d+)+(?!d))?" + // Capture Group 4 (Is optional), matches a list of operators (+4*3)
-                    "(?:\\[(.+)])?"+ // Capture Group 5 (Is optional), matches a [label] with any text inside
+                    "(?:\\[([^\\]]+)])?"+ // Capture Group 5 (Is optional), matches a [label] with any text inside
                     "(?:([+\\-*/])|$)"); // Capture Group 6, matches the operator between dice rolls
             //@formatter:off
 
